@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: 30px;
+            font-family: '楷体', 'Microsoft Yahei';
+        }
+        body {
+            background-color: #d0e4fe;
+        }
+        .red {
+            /* Class选择器 */
+            color: red;
+        }
+        #green {
+            /*  */
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="表格1">
+        <table align="center" border="1" width="30%" height="150" cellpadding="0" cellspacing="0">
+            <caption> <h1>热度榜单</h1> </caption>
+            <thead>
+                <tr>
+                    <th class="red">排名</th>
+                    <th>关键词</th>
+                    <th>趋势</th>
+                    <th>相关链接</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>1</td>
+                    <td>鬼吹灯</td>
+                    <td> <img src="1.jpg" width="20"></td>
+                    <td><a href="#">微博</a> <a href="#">知乎</a> </td>
+                </tr>
+                <tr align="center">
+                    <td>2</td>
+                    <td>盗墓笔记</td>
+                    <td> <img src="1.jpg" width="20"></td>
+                    <td><a href="#">贴吧</a> <a href="#">图片</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="表格2">
+    <br><hr>
+        <table align="center" border="1" width="200" height="200" cellspacing="0">
+            <caption><h3>合并单元格</h3></caption>
+            <thead>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>1</td>
+                    <td colspan="2" rowspan="2">2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><hr>
+    <div id="列表1">
+        <h3>无序列表</h3>
+        <ul> <!--不可包括其他标签-->
+            <li>列表项1</li>
+            <li>列表项2</li>
+            <li>列表项3</li>
+        </ul>
+    </div>
+    <div id="列表2">
+        <h3>有序列表</h3>
+        <ol> <!--不可包括其他标签-->
+            <li>列表项1</li>
+            <li>列表项2</li>
+            <li>列表项3</li>
+        </ol>
+    </div>
+    <div id="列表3">
+        <h3>自定义列表</h3>
+        <dl> <!--不可包括其他标签-->
+            <dt>关注我们</dt>
+            <dd>名词解释1</dd>
+            <dd>名词解释2</dd>
+            <dd>名词解释3</dd>
+        </dl>
+    </div>
+    <br><hr>
+    <div id="表单1">
+        <h2>表单<a href="https://www.runoob.com/html/html-forms.html" target="_blank">属性</a> </h2>
+        <form action="demo.php" method="get" name="表单1">
+            <label for="text"> 用户名: <input type="txt" name="username" maxlength="10" id="text"> <br> </label>
+            密码: &nbsp<input type="password"> <br>
+            性别: 男<input type="radio" name="sex" value="男" checked="checked"> 女<input type="radio" name="sex" value="女"> <br>
+            籍贯: <select>
+                <option>安徽</option>
+                <option>北京</option>
+                <option selected="selected">重庆</option>
+            </select><br>
+            爱好: 吃饭<input type="checkbox" checked="checked"> 睡觉 <input type="checkbox"> 玩游戏<input type="checkbox"> <br>
+            今日总结: <br>
+            <textarea cols="50" rows="5">显示5行，每行最多50字符</textarea> <br>
+            <input type="submit" value="注册">
+            <input type="reset" value="重置">
+            <input type="button" value="获取验证码"> <br>
+            上传头像: <input type="file" value="选中文件">
+            <!-- 点击submit，将表单数据提交给后台-->
+        </form>
+    </div>
+</body>
+</html>
