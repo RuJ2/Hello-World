@@ -11,12 +11,12 @@ def add(a: float, b: float) -> float:
 
 
 def divide(a: float, b: float) -> float:
-    """Divide a by b. Beware: no zero check!"""
+    """Divide a by b. Note: no zero check."""
     return a / b
 
 
 def safe_divide(a: float, b: float) -> float:
-    """Divide a by b with zero check."""
+    """Divide a by b with zero-division guard."""
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
